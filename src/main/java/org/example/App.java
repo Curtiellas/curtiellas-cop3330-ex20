@@ -13,14 +13,14 @@ public class App
     {
         Scanner sc = new Scanner(System.in);
 
-        System.out.println( "What is the order amount? " );
+        System.out.print( "What is the order amount? " );
         double amount = sc.nextDouble();
 
-        System.out.println( "What state do you live in? " );
+        System.out.print( "What state do you live in? " );
         sc.nextLine();      //eats the /n causing next line not to read
         String state = sc.nextLine();
 
-        System.out.println( "What county do you live in? " );
+        System.out.print( "What county do you live in? " );
         String county = sc.nextLine();
 
         double tax = 0;     //arbitrary initialization value
@@ -45,7 +45,7 @@ public class App
         double total = amount + taxAmount;
 
         //output
-        System.out.printf("The tax is $%.2f\nThe total is $%.2f\n", tax, total);
+        System.out.printf("The tax is $%.2f\nThe total is $%.2f\n", taxAmount, total);
 
     }
 }
